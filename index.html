@@ -30,23 +30,23 @@
     Footer
 -->
     <header>
-        <h1>Daniel Gomes</h1>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
+        <nav id="home">
+            <ul class="nav-list">
+                <li class="logo">Daniel Gomes</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
-        <div>
+        <div class="profile-image-wrap">
             <img src="./images/bee.jpg">
         </div>
         <p>Hi! I'm a front-end developer who enjoys responsve designa and css.
             I recently finished a degree in front-end web developtment at Treehouse and am excited to share my skills!
         </p>
     </header>
-    <main>
+    <main id="portfolio">
         <h1>Portfolio</h1>
 
         <section>
@@ -84,16 +84,29 @@
             <p>Someone can enter in te numbers they want, and press the big blue button and get the result.</p>
         </section>
 
-    <section>
-        <h2>Contact</h2>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p>Phone: 864.494.7891</p>
-            <p>Email: dannygomes520@gmail.com</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to
+                hear from you!</p>
+            <p>Phone: <a href="tel:8644947891">864.494.7891</a></p>
+            <p>Email: <a href="mailto:dannygomes520@gmail.com?subject=Hello">dannygomes520@gmail.com</a></p>
 
 
-    </section>
+        </section>
 
     </main>
+
+    <footer>
+        <h2>Daniel S. Gomes</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#home">Back to top</a>
+        </nav>
+    </footer>
 
 </body>
 

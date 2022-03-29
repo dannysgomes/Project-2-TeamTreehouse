@@ -1,3 +1,67 @@
-.heading{
-    color: auto;
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background: #f7f5f0;
+    min-width: fit-content;
+  }
+  
+  img {
+    width: 100px; /*temporary*/
+  }
+  
+  header {
+    background-color: #fafafa;
+  }
+  
+  .nav-list {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 10px;
+  }
+  
+  .nav-list .logo {
+    background-color: inherit;
+  }
+  
+  .nav-list li {
+    list-style-type: none; /*removes bullets from list item*/
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .profile-image-wrap {
+    background-color: #ededed;
+    padding: 50px;
+  }
+  
+  .profile-image-wrap img {
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover; /*maintain aspect ratio*/
+    width: 100px;
+  }
+  
+  /*hints*/
+  /* add one media query for tablets, add another for desktop */
+  /* inside each media query you will have to target the classes that need modifying */
+  /* For the nav in desktop, to make it horizontal, add media query for desktop, chane flex-direction */
+  /*
+  
+  Desktop
+  @media screen only add proper size for desktop {
+      .nav-list {
+          flex-direction: column
+      }
+  }
+  
+  */
+  
