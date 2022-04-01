@@ -11,9 +11,20 @@
     background: #f7f5f0;
     min-width: fit-content;
   }
+
+  .link {
+text-decoration: none;
+
+  }
+
+  .card {
+    width: 100%;
+    
+      }
   
-  img {
-    width: 100px; /*temporary*/
+ .card img {
+    width: 100%;
+    padding: 0 15px; /*temporary*/
   }
   
   header {
@@ -35,20 +46,25 @@
   .nav-list li {
     list-style-type: none; /*removes bullets from list item*/
     background-color: #fff;
+    font-weight: bold;
     margin-bottom: 5px;
+    padding: 15px 0;
+    text-transform: uppercase;
   }
   
   .profile-image-wrap {
     background-color: #ededed;
-    padding: 50px;
+    margin: 30px 60px;
+    padding: 30px;
   }
   
   .profile-image-wrap img {
     border-radius: 50%;
-    height: 100px;
+    height: 150px;
     object-fit: cover; /*maintain aspect ratio*/
-    width: 100px;
+    width: 150px;
   }
+ 
   
   /*hints*/
   /* add one media query for tablets, add another for desktop */
