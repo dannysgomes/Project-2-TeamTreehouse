@@ -1,113 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Daniel's Mobile-First Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <!--
-          header
-          h1 with my name
-          <nav> links
-            For image do a <div> with <img>
-                p
-      -->
-    <!--Main
-    h1 portfolio
-
-    Individual sections
-    each <section> > img, h2, p
-
-    Contact section
-    <section> h2, p (text), p (phone), p (email)
-    -->
-    <!--
-    Footer
--->
+  <body>
     <header>
-        <nav id="home">
-            <ul class="nav-list">
-                <li class="logo">Daniel Gomes</li>
-                <li><a class="link" href="#home">Home</a></li>
-                <li><a class="link" href="#portfolio">Portfolio</a></li>
-                <li><a class="link" href="#contact">Contact</a></li>
-            </ul>
-
-        </nav>
+      <nav id="home">
+        <h1 class="logo">Daniel Gomes</h1>
+        <ul class="nav-list">
+          <li class="desktop-header-name">Daniel S. Gomes</li>
+          <li><a class="link toplink1" href="#home">Home</a></li>
+          <li><a class="link toplink2" href="#portfolio">Portfolio</a></li>
+          <li><a class="link toplink3" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="profile">
         <div class="profile-image-wrap">
-            <img src="./images/bee.jpg">
+          <img src="./images/bee.jpg" alt="Profile image" />
         </div>
-        <p>Hi! I'm a front-end developer who enjoys responsve designa and css.
-            I recently finished a degree in front-end web developtment at Treehouse and am excited to share my skills!
+        <p class="notation">
+          Hi! I'm a front-end developer who enjoys responsive design and css. I
+          recently finished a degree in front-end web developtment at Treehouse
+          and am excited to share my skills!
         </p>
+      </section>
     </header>
     <main id="portfolio">
-        <h1>Portfolio</h1>
-
-        <section  class="card">
-            <img src="./images/portfolio-1.png" <h2>Marketing Page</h2>
-            <p>This project shows the front page of a marketing websitre meant for a specific business I'm interested
-                in.</p>
+      <h3 class="heading-portfolio">PORTFOLIO</h3>
+      <div class="cards">
+        <section class="card">
+          <img src="./images/portfolio-1.png" alt="marketing image"/>
+          <h3>Marketing Page</h3>
+          <p class="notation">
+            This project shows the front page of a marketing website meant for a
+            specific business I'm interested in.
+          </p>
         </section>
 
-        <section  class="card">            
-            <img src="./images/portfolio-2.png" <h2>Search Page</h2>
-            <p>This project searches through a specific database to find information that the user is trying to look up.
-            </p>>
+        <section class="card">
+          <img src="./images/portfolio-2.png" alt="search image" />
+          <h3>Search Page</h3>
+          <p class="notation">
+            This project searches through a specific database to find
+            information that the user is trying to look up.
+          </p>
         </section>
 
-        <section  class="card">
-            <img src="./images/portfolio-3.png" <h2>Travel App</h2>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.
-            </p>
+        <section class="card">
+          <img src="./images/portfolio-3.png" alt="travel app image" />
+          <h3>Travel App</h3>
+          <p class="notation">
+            This project compares travel times based on different transportation
+            methods and tells you the best one.
+          </p>
         </section>
 
-        <section  class="card">
-            <img src="./images/portfolio-3.png" <h2>Map of Favorite Spots</h2>
-            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself
-                walking tour.</p>
+        <section class="card">
+          <img src="./images/portfolio-3.png" alt="map image" />
+          <h3>Map of Favorite Spots</h3>
+          <p class="notation">
+            This project uses mapping apis to plot points for my favorite spots
+            in the city for a do-it-yourself walking tour.
+          </p>
         </section>
 
-        <section  class="card">
-            <img src="./images/portfolio-5.png" <h2>Photo Gallery</h2>
-            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through
-                photos.</p>
+        <section class="card">
+          <img src="./images/portfolio-5.png" alt="photo image"/>
+          <h3>Photo Gallery</h3>
+          <p class="notation">
+            This project shows pictures from a recent trip to the viewer and
+            allows them to easily navigate through photos.
+          </p>
         </section>
 
-        <section  class="card">
-            <img src="./images/portfolio-6.png" <h2>Calculator</h2>
-            <p>Someone can enter in te numbers they want, and press the big blue button and get the result.</p>
+        <section class="card">
+          <img src="./images/portfolio-6.png" alt="calculator image"/>
+          <h3>Calculator</h3>
+          <p class="notation">
+            Someone can enter in the numbers they want, and press the big blue
+            button and get the result.
+          </p>
         </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to
-                hear from you!</p>
-            <p>Phone: <a href="tel:8644947891">864.494.7891</a></p>
-            <p>Email: <a href="mailto:dannygomes520@gmail.com?subject=Hello">dannygomes520@gmail.com</a></p>
-
-
-        </section>
-
+      </div>
+      <section id="contact">
+        <h3>CONTACT</h3>
+        <p class="notation">
+          If you're interested in chatting or want more information about what
+          I've been working on, I'd love to hear from you!
+        </p>
+        <p class="notation">Phone: <a href="tel:8644947891">864.494.7891</a></p>
+        <p class="notation">
+          Email:
+          <a href="mailto:dannygomes520@gmail.com?subject=Hello"
+            >dannygomes520@gmail.com</a
+          >
+        </p>
+      </section>
     </main>
-
+    <span class="line"></span>
     <footer>
-        <h2>Daniel S. Gomes</h2>
-        <nav>
-            <ul class="nav-list">
-                <li><a class="link" href="#home">Home</a></li>
-                <li><a class="link" href="#portfolio">Portfolio</a></li>
-                <li><a class="link" href="#contact">Contact</a></li>
-            </ul>
-            <a class="link" href="#home">Back to top</a>
-        </nav>
+      <nav>
+        <ul class="nav-list">
+          <li class="footer-name">Daniel S. Gomes</li>
+          <li><a class="link link1" href="#home">Home</a></li>
+          <li><a class="link link2" href="#portfolio">Portfolio</a></li>
+          <li><a class="link link3" href="#contact">Contact</a></li>
+        </ul>
+
+        <ul class="mobile-footer-links">
+          <li><span>Daniel S. Gomes</span></li>
+          <li><a href="#home">Back to top</a></li>
+        </ul>
+      </nav>
     </footer>
-
-</body>
-
+  </body>
 </html>

@@ -1,83 +1,264 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    color: #222;
-    background: #f7f5f0;
-    min-width: fit-content;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  min-width: fit-content;
+  padding: 15px;
+  text-align: center;
+}
+.desktop-header-name {
+  display: none;
+}
+
+.logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif black;
+  font-size: 30px;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card img {
+  width: 100%;
+  padding: 0 15px; /*temporary*/
+}
+
+.card h3 {
+  margin: 20px 0 15px;
+}
+
+header {
+  background-color: #fafafa;
+  margin: -15px;
+  padding: 15px;
+}
+
+.nav-list {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.nav-list .logo {
+  background-color: inherit;
+}
+
+.nav-list li {
+  list-style-type: none; /*removes bullets from list item*/
+  background-color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 15px 0;
+  text-transform: none;
+}
+
+.notation {
+  font-size: 1.2rem;
+}
+
+.heading-portfolio {
+  margin: 45px 0 30px;
+}
+
+.notation {
+  color: #a5a1a1;
+}
+
+.profile-image-wrap {
+  background-color: #ffffff;
+  margin: 30px auto;
+  padding: 30px;
+  width: 300px;
+}
+
+.profile-image-wrap img {
+  border-radius: 50%;
+  height: 150px;
+  object-fit: cover; /*maintain aspect ratio*/
+  width: 150px;
+}
+
+#contact {
+  margin: 0 -15px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+#contact a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6e6e6e;
+}
+
+footer {
+  margin: 0 -15px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+footer h2 {
+  display: none;
+}
+
+footer .nav-list {
+  display: none;
+}
+
+.line {
+  border-bottom: 1px solid #a5a1a1;
+  display: block;
+}
+
+.mobile-footer-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none; /*removes bullets from list item*/
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mobile-footer-links a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .link {
-text-decoration: none;
-
+  #home .desktop-header-name {
+    display: none;
   }
 
   .card {
-    width: 100%;
-    
-      }
-  
- .card img {
-    width: 100%;
-    padding: 0 15px; /*temporary*/
+    flex-grow: 1;
+    flex-basis: 350px;
   }
-  
-  header {
-    background-color: #fafafa;
-  }
-  
-  .nav-list {
+
+  .nav-list link {
     background-color: #fafafa;
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0 10px;
+    flex-direction: row;
   }
-  
-  .nav-list .logo {
-    background-color: inherit;
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    max-width: inherit;
+    margin: 0 auto;
   }
-  
+
   .nav-list li {
-    list-style-type: none; /*removes bullets from list item*/
-    background-color: #fff;
-    font-weight: bold;
-    margin-bottom: 5px;
-    padding: 15px 0;
-    text-transform: uppercase;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: flex-end;
   }
-  
+
+  .profile {
+    display: flex;
+  }
+
   .profile-image-wrap {
-    background-color: #ededed;
-    margin: 30px 60px;
-    padding: 30px;
+    margin: 22px 30px;
+    order: 1;
+    width: 40%;
   }
-  
-  .profile-image-wrap img {
-    border-radius: 50%;
-    height: 150px;
-    object-fit: cover; /*maintain aspect ratio*/
-    width: 150px;
+
+  .profile .notation {
+    text-align: left;
+    width: 60%;
   }
- 
-  
-  /*hints*/
-  /* add one media query for tablets, add another for desktop */
-  /* inside each media query you will have to target the classes that need modifying */
-  /* For the nav in desktop, to make it horizontal, add media query for desktop, chane flex-direction */
-  /*
-  
-  Desktop
-  @media screen only add proper size for desktop {
-      .nav-list {
-          flex-direction: column
-      }
+
+  #contact {
+    padding: 40px 60px;
   }
-  
-  */
-  
+
+  #contact a {
+    color: #6e6e6e;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .mobile-footer-links{
+    display: none;
+  }
+
+ .notation {
+    padding:0 30px 0;
+  }
+
+  footer .nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }  
+
+  .footer-name {
+    margin-right: auto;
+  }
+
+  .link1, .link2, .link3 {
+    padding: 0 5px;
+  }
+
+  .footer-links {
+    color: #6e6e6e;
+  }
+
+  .footer-links a {
+    color: #6e6e6e;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  #home .logo {
+    display: none;
+  }
+
+  #home .desktop-header-name {
+    display: flex;
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .nav-list {
+    padding: 0px 15px;
+  }
+
+  .notation {
+    padding: 0 15px 0;
+  }
+
+  .toplink1, .toplink2, .toplink3 {
+    padding: 0 15px;
+  }
+
+  .card {
+    flex: 1 0 33%;
+    text-align: center;
+  }
+}
